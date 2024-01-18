@@ -1,30 +1,30 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Vs Code\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj": {}
+    "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj": {}
   },
   "projects": {
-    "E:\\Vs Code\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj": {
+    "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Vs Code\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj",
+        "projectUniqueName": "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj",
         "projectName": "RoleBasedAuthentication",
-        "projectPath": "E:\\Vs Code\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj",
-        "packagesPath": "C:\\Users\\Viyan\\.nuget\\packages\\",
-        "outputPath": "E:\\Vs Code\\RoleBasedAuthentication\\obj\\",
+        "projectPath": "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj",
+        "packagesPath": "C:\\Users\\nithish.saravanan\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Viyan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\nithish.saravanan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
-          "net7.0"
+          "net8.0"
         ],
         "sources": {
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net7.0": {
-            "targetAlias": "net7.0",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -35,9 +35,27 @@
         }
       },
       "frameworks": {
-        "net7.0": {
-          "targetAlias": "net7.0",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
             "system.data.sqlclient": {
               "target": "Package",
               "version": "[4.8.5, )"
@@ -66,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.107\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
