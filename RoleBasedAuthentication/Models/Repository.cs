@@ -11,7 +11,7 @@ namespace RoleBasedAuthentication.Models{
 
             SqlConnection connection = new SqlConnection(getConntection());
             connection.Open();
-            SqlCommand sqlcommand = new SqlCommand($"select count(*) from Login where Username=@username and Password=@password",connection);
+            SqlCommand sqlcommand = new SqlCommand($"select count(*) from Roles where Username=@username and Password=@password",connection);
             sqlcommand.Parameters.Add("@username",sqlDbType:System.Data.SqlDbType.VarChar).Value = user.Username;
             sqlcommand.Parameters.Add("@password",sqlDbType:System.Data.SqlDbType.VarChar).Value = user.Password;
             if(Convert.ToInt32(sqlcommand.ExecuteScalar())==1){
@@ -22,7 +22,7 @@ namespace RoleBasedAuthentication.Models{
          public static string GetRole(User user){
             using(SqlConnection connection = new SqlConnection(getConntection())){
             connection.Open();
-            SqlCommand sqlcommand = new SqlCommand($"select Role from Login where Username=@username",connection);
+            SqlCommand sqlcommand = new SqlCommand($"select Role from Roles where Username=@username",connection);
             sqlcommand.Parameters.Add("@username",sqlDbType:System.Data.SqlDbType.VarChar).Value = user.Username;
             string? role = Convert.ToString(sqlcommand.ExecuteScalar());
             return role;  
@@ -35,7 +35,7 @@ namespace RoleBasedAuthentication.Models{
 
         IConfiguration configuration = build.Build();
 
-        string? connectionString = Convert.ToString(configuration.GetConnectionString("DB1"));
+        string? connectionString = Convert.ToString(configuration.GetConnectionString("DefaultConnection"));
 
         return connectionString;
         }

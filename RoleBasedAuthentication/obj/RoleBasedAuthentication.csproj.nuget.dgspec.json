@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj": {}
+    "C:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj": {}
   },
   "projects": {
-    "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj": {
+    "C:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj",
+        "projectUniqueName": "C:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj",
         "projectName": "RoleBasedAuthentication",
-        "projectPath": "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj",
+        "projectPath": "C:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\RoleBasedAuthentication.csproj",
         "packagesPath": "C:\\Users\\nithish.saravanan\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\obj\\",
+        "outputPath": "C:\\Users\\nithish.saravanan\\Desktop\\TASK REVIEW\\RoleBasedAuthentication\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nithish.saravanan\\AppData\\Roaming\\NuGet\\NuGet.Config"

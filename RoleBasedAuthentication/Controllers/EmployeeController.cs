@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Authorization;
 namespace RoleBasedAuthentication.Controllers;
 
-[Authorize(Roles ="Employee")]
+[Authorize(Roles ="user")]
 public class EmployeeController : Controller
 {
      public IActionResult Index()

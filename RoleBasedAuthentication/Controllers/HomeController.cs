@@ -47,10 +47,12 @@ public class HomeController : Controller
                     new Claim(ClaimTypes.Name, user.Username),
                     new Claim(ClaimTypes.Role, role),
                 };
+
+                string? actualRole = (role == "admin") ? "Admin" : "Employee";
                 
                 var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
                 HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, new ClaimsPrincipal(claimsIdentity));
-                return RedirectToAction("Index",$"{role}");
+                return RedirectToAction("Index",$"{actualRole}");
             }
             ViewBag.message="Invalid credentials";
             return View();

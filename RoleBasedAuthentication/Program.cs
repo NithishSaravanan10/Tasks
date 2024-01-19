@@ -2,6 +2,7 @@
 using RoleBasedAuthentication.Models;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using RoleBasedAuthentication.Models;
+using Microsoft.EntityFrameworkCore;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -15,8 +16,8 @@ builder.Services.AddAuthentication(option =>{
 }).AddCookie();
 
 builder.Services.AddAuthorization(option =>{
-    option.AddPolicy("Admin",policy => policy.RequireRole("Admin"));
-    option.AddPolicy("Employee",policy => policy.RequireRole("Employee"));
+    option.AddPolicy("admin",policy => policy.RequireRole("admin"));
+    option.AddPolicy("user",policy => policy.RequireRole("user"));
 });
 
 var app = builder.Build();
